@@ -4,11 +4,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import queryString from "query-string";
 import { loadStripe } from "@stripe/stripe-js";
 
-/* const stripePromise = loadStripe(
+// api de desarrollo stripe
+const stripePromise = loadStripe(
   "pk_test_51IlpAKGXwjeEInzC7WJaPODCcCQhaYgngfus40GZKRcs8MWkd1PNcnXju2Q28XA5PWD0Vi4xiKOi7BjaPS6MUar900oBNocxZp"
-); */
+);
 
-const stripePromise = loadStripe("pk_live_51JHQ4fFcg829UoeGm16oETTO8z98MI5X2f6GHaQ8QeCSYE5G04AxVE5OBMtTUKpp8ZdT5thESg9RebycgPT4IkVV00BBxuF7FO")
+// api de producción stripe
+/* const stripePromise = loadStripe("pk_live_51JHQ4fFcg829UoeGm16oETTO8z98MI5X2f6GHaQ8QeCSYE5G04AxVE5OBMtTUKpp8ZdT5thESg9RebycgPT4IkVV00BBxuF7FO")
+ */
 
 // Showing null, because we will show the result in the app and not on the web
 function Success() {

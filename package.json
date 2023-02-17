@@ -1,6 +1,9 @@
 {
   "name": "paymentsite",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.x"
+  },
   "private": true,
   "dependencies": {
     "@stripe/stripe-js": "^1.15.0",

@@ -6,7 +6,7 @@ import { loadStripe } from "@stripe/stripe-js";
 
 // api de desarrollo stripe
 const stripePromise = loadStripe(
-  "pk_test_51IlpAKGXwjeEInzC7WJaPODCcCQhaYgngfus40GZKRcs8MWkd1PNcnXju2Q28XA5PWD0Vi4xiKOi7BjaPS6MUar900oBNocxZp"
+  "pk_test_51JHQ4fFcg829UoeGL7sSYYAxZcOLDChyDfjLUe8uZakBuQhy9IXMZuc0e4vJSfCbuA9QofbTvbCyf5LvZOc0AEh4000XIOgJ7Y"
 );
 
 // api de producción stripe

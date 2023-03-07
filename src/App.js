@@ -5,14 +5,10 @@ import queryString from "query-string";
 import { loadStripe } from "@stripe/stripe-js";
 
 // api de desarrollo stripe
-const stripePromise = loadStripe(
-  "pk_test_51JHQ4fFcg829UoeGL7sSYYAxZcOLDChyDfjLUe8uZakBuQhy9IXMZuc0e4vJSfCbuA9QofbTvbCyf5LvZOc0AEh4000XIOgJ7Y"
-);
+//const stripePromise = loadStripe(process.env.REACT_APP_PK_TEST);
 
 // api de producción stripe
-/* const stripePromise = loadStripe(
-  "pk_live_51JHQ4fFcg829UoeGm16oETTO8z98MI5X2f6GHaQ8QeCSYE5G04AxVE5OBMtTUKpp8ZdT5thESg9RebycgPT4IkVV00BBxuF7FO"
-); */
+const stripePromise = loadStripe(process.env.REACT_APP_PK_LIVE);
 
 // Showing null, because we will show the result in the app and not on the web
 function Success() {
@@ -26,7 +22,6 @@ function Failure() {
 
 // Showing null, because we will show the result in the app and not on the web
 function PaymentInit() {
-  console.log("Payment Init");
   return null;
 }
 

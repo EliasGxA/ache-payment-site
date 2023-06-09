@@ -5,10 +5,10 @@ import queryString from "query-string";
 import { loadStripe } from "@stripe/stripe-js";
 
 // api de desarrollo stripe
-//const stripePromise = loadStripe(process.env.REACT_APP_PK_TEST);
+const stripePromise = loadStripe(process.env.REACT_APP_PK_TEST);
 
 // api de producción stripe
-const stripePromise = loadStripe(process.env.REACT_APP_PK_LIVE);
+// const stripePromise = loadStripe(process.env.REACT_APP_PK_LIVE);
 
 // Showing null, because we will show the result in the app and not on the web
 function Success() {

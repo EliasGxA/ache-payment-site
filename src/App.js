@@ -5,7 +5,7 @@ import queryString from "query-string";
 import { loadStripe } from "@stripe/stripe-js";
 
 // api de desarrollo stripe
-const stripePromise = loadStripe(process.env.REACT_APP_PK_TEST);
+const stripePromise = loadStripe(process.env.REACT_APP_PK_LIVE);
 
 // api de producción stripe
 // const stripePromise = loadStripe(process.env.REACT_APP_PK_LIVE);

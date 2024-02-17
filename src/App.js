@@ -4,11 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import queryString from "query-string";
 import { loadStripe } from "@stripe/stripe-js";
 
-// api de desarrollo stripe
-const stripePromise = loadStripe(process.env.REACT_APP_PK_LIVE);
-
-// api de producción stripe
-// const stripePromise = loadStripe(process.env.REACT_APP_PK_LIVE);
+const stripePromise = loadStripe(process.env.REACT_APP_PK);
 
 // Showing null, because we will show the result in the app and not on the web
 function Success() {
